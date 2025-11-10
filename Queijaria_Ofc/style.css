@@ -1,0 +1,14 @@
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.menu-principal{
+    margin-left: 6rem;
+}
+
+.btn-editar {
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 100%;
+    display: block;
+}
