@@ -1,10 +1,11 @@
 {
     "name": "Queijaria",
-    "Short_name": "Queijaria",
-    "start_url": ".index.php",
-    "display": "Standalone",
-    "Background_color": "#ffffff",
-    "theme_color": "#",
+    "short_name": "Queijaria",
+    "start_url": "/Queijaria_Ofc/index.php",
+    "scope": "/Queijaria_Ofc/",
+    "display": "standalone",
+    "background_color": "#fff0e1",
+    "theme_color": "#b50000",
     "icons": [
         {
             "src": "/Queijaria_Ofc/img/queijo.png",

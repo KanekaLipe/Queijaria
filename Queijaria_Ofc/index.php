@@ -6,9 +6,11 @@
     <title>Cadastro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="Manifest.json">
-    <meta name="theme-color" content="#000000"/>
+    <link rel="stylesheet" href="/Queijaria_Ofc/style.css">
+    <link rel="manifest" href="/Queijaria_Ofc/Manifest.json">
+    <meta name="theme-color" content="#b50000">
+    <link rel="icon" href="img/queijo.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/queijo.png">
 
 </head>
 <body style="background-color: #fff0e1;">
@@ -65,11 +67,15 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <script>
-        if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/Queijaria_Ofc/sw.js')
-        .then(registration => console.log('SW registered'))
-        .catch(error => console.log('SW registration failed'));
-        }
+    // Registrar SW com scope relativo (recomendado)
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js', { scope: '/Queijaria_Ofc/' })
+        .then(reg => {
+          console.log('Service Worker registrado com scope:', reg.scope);
+        }).catch(err => {
+          console.warn('Falha ao registrar Service Worker:', err);
+        });
+    }
     </script>
 </body>
 </html>
