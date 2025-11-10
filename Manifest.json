@@ -1,0 +1,21 @@
+{
+    "name": "Queijaria",
+    "short_name": "Queijaria",
+    "start_url": "/Queijaria_Ofc/index.php",
+    "scope": "/Queijaria_Ofc/",
+    "display": "standalone",
+    "background_color": "#fff0e1",
+    "theme_color": "#b50000",
+    "icons": [
+        {
+            "src": "/Queijaria_Ofc/img/queijo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/Queijaria_Ofc/img/queijo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
